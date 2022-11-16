@@ -40,6 +40,10 @@ html {
     text-align: center;
     margin: auto;
   }
+
+  h1 {
+    font-size: 50px;
+  }
   
   /* Add your media query here */
   @media screen and (min-width: 800px) {
