@@ -1,0 +1,47 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  
+    .skip a {
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
+  
+  .skip a {
+    position: fixed;
+    top: -40px;
+  }
+  
+  .skip a:focus {
+    position: fixed;
+    top: 20px;
+  }
+  
+  *:focus {
+    border: 2px solid #000;
+  }
+  
+  .text-block {
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Add your media query here */
+  @media screen and (min-width: 800px) {
+  
+  }
