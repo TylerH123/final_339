@@ -70,6 +70,27 @@ html {
     height: 300px;
     overflow: hidden;
   }
+
+  .NewItems{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .NewItems > img{
+    height: 50%;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .deals{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding: 100px;
+  }
   /* Add your media query here */
   @media screen and (min-width: 800px) {
   
