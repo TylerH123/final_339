@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>My Shop</title>
+  <title>Burger Kingdom</title>
 </head>
 
 <body>
@@ -24,9 +25,8 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li class="active"><a href="deals.html">Deals</a></li>
+          <li class="active current"><a href="deals.html">Deals</a></li>
           <li><a href="about.html">About Our Food</a></li>
-          <li><a href=""><img id="cart" src="images/cart.png" alt="cart">(0)</a></li>
         </ul>
       </div>
     </nav>
@@ -34,18 +34,72 @@
   <main id="main">
     <h1>Deals</h1>
     <div class="deals">
-      <img src="./images/smoothie.jpeg" alt="free smoothie">
-      <img src="./images/combo.jpeg" alt="free combo">
-      <img src="./images/combo_meal.jpeg" alt="free combo meal">
-      <img src="./images/free_soda.png" alt="free fountain drink">
-      <img src="./images/chips.jpeg" alt="free bag of chips">
-      <img src="./images/cookies.jpg" alt="free cookies">
+      <div class="deal-items">
+        <img src="./images/smoothie.jpeg" alt="free smoothie">
+        <div> 
+          <h2>Free drink</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/combo.jpeg" alt="free combo">
+        <div> 
+          <h2>Free Fries and Drink</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/combo_meal.jpeg" alt="free combo meal">
+        <div> 
+          <h2>Free Combo Meal</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/free_soda.png" alt="free fountain drink">
+        <div> 
+          <h2>Free Fountain Drink</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/cookies.jpg" alt="free cookies">
+        <div> 
+          <h2>Free Cookies</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/chips.jpeg" alt="free bag of chips">
+        <div> 
+          <h2>Free Bag of Chips</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
     </div>
     <h1>Promotions</h1>
     <div class="deals">
-      <img src="./images/15off.jpg" alt="15% off">
-      <img src="./images/5off.jpg" alt="$5 off">
-      <img src="./images/free_delivery.jpg" alt="free delivery">
+      <div class="deal-items">
+        <img src="./images/15off.jpg" alt="15% off">
+        <div> 
+          <h2>Take 15% off</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/5off.jpg" alt="$5 off">
+        <div> 
+          <h2>$5 Off Your Next Order</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
+      <div class="deal-items">
+        <img src="./images/free_delivery.jpg" alt="free delivery">
+        <div> 
+          <h2>Free Delivery</h2>
+          <button type="button" class="btn btn-primary">Apply to order</button>
+        </div>
+      </div>
     </div>
   </main>
 </body>

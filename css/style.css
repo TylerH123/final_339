@@ -21,8 +21,8 @@ html {
   top: 20px;
 }
 
-*:focus {
-  border: 2px solid #000;
+.current {
+  font-weight: bold;
 }
 
 .text-block {
@@ -32,6 +32,7 @@ html {
 
 h1 {
   font-size: 50px;
+  text-align: center;
 }
 
 .MenuItems{
@@ -49,7 +50,7 @@ h1 {
 }
 
 #cart {
-  height: 10%;
+  /* height: 8%; */
   width: 10%;
 }
 
@@ -71,14 +72,35 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
+
+/* CSS FOR DEALS PAGE */
 .deals{
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 50px;
-  padding: 100px;
+  flex-wrap: wrap;
 }
+
+.deal-items img{
+  width: 400px;
+  border-bottom: solid #000 3px;
+}
+
+.deal-items {
+  border: #000 solid 3px;
+  margin-bottom: 25px;
+}
+
+.deals > div {
+  text-align: center;
+}
+
+.deal-items button {
+  margin-bottom: 5px;
+}
+
+/* END OF DEALS CSS */
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
@@ -89,8 +111,4 @@ h1 {
     -webkit-transition: none;
     transition: none;
   }
-}
-/* Add your media query here */
-@media screen and (min-width: 800px) {
-
 }
