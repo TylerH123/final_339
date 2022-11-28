@@ -29,7 +29,7 @@ function applyPromo(btn) {
     btn.innerHTML = "Unapply"; 
     btn.classList.remove("btn-primary");
     btn.classList.add("btn-danger");
-    sleep(50).then(() => {
+    sleep(75).then(() => {
         alert("Promotion Successfully Applied");
     }); 
 }
