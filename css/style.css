@@ -9,9 +9,7 @@ html {
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-}
-
-.skip a {
+  color: #000;
   position: fixed;
   top: -40px;
 }
@@ -19,6 +17,10 @@ html {
 .skip a:focus {
   position: fixed;
   top: 20px;
+}
+
+.active {
+  border: #fff solid 1px;
 }
 
 .current {
@@ -50,7 +52,6 @@ h1 {
 }
 
 #cart {
-  /* height: 8%; */
   width: 10%;
 }
 

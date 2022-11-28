@@ -18,6 +18,7 @@ function apply(id) {
     currentDeal = temp;
 }
 
+// function to sleep
 function sleep(ms) {
     return new Promise(
       resolve => setTimeout(resolve, ms)
