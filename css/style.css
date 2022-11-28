@@ -84,7 +84,7 @@ h1 {
 }
 
 .deal-items img{
-  width: 400px;
+  width: 75%;
   border-bottom: solid #000 3px;
 }
 
@@ -120,7 +120,7 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
     column-gap: 1px;
   }
 
