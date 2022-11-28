@@ -129,6 +129,7 @@ h1 {
   }
 
   .deal-items img{
+    width: 450px;
     height: 400px;
   }
   /* END OF DEALS CSS */
