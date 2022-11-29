@@ -44,22 +44,90 @@
     </nav>
   </header>
   <main id="main">
-    <h1>About Our Food</h1>
     <div class="about text-block">
-      <p tabindex="0">Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam pulvinar euismod dolor, eu
-        aliquam nibh
-        efficitur vel. Phasellus sit amet velit congue, finibus nibh eu, ultricies magna. Donec eu ultrices eros. Donec
-        sit amet metus nisi. Nulla tincidunt justo non risus aliquam, sit amet lacinia lacus commodo. Aliquam ultricies
-        ante sed semper porta. Integer eros tortor, convallis eu ultricies malesuada, fringilla sed libero. Aenean
-        molestie rhoncus leo eu imperdiet. Mauris eget molestie massa. Maecenas auctor sapien a arcu laoreet, et
-        consectetur odio scelerisque. Praesent ac turpis sed neque porttitor finibus faucibus quis tortor. Morbi tempus
-        turpis lacus, nec laoreet tellus rhoncus quis. Aliquam vitae dolor urna. In pellentesque ullamcorper turpis,
-        commodo cursus mauris condimentum eget.</p>
+      <h1>About Our Food</h1>
+      <p tabindex="0" class="about-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh. Egestas sed sed risus pretium. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Eget mauris pharetra et ultrices neque ornare aenean euismod. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Arcu dictum varius duis at. Erat nam at lectus urna duis. Vel risus commodo viverra maecenas. Massa enim nec dui nunc mattis. Sem fringilla ut morbi tincidunt augue interdum. Eu ultrices vitae auctor eu augue. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Quis blandit turpis cursus in hac habitasse platea. Fringilla est ullamcorper eget nulla facilisi. Porttitor rhoncus dolor purus non enim praesent. Dui ut ornare lectus sit amet. Facilisi cras fermentum odio eu feugiat pretium. Odio ut sem nulla pharetra.
+
+        Curabitur gravida arcu ac tortor dignissim convallis aenean. Adipiscing elit pellentesque habitant morbi tristique. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Id diam maecenas ultricies mi eget. Sit amet consectetur adipiscing elit pellentesque. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. In hac habitasse platea dictumst quisque sagittis purus sit amet. Sit amet venenatis urna cursus eget nunc scelerisque. Pretium quam vulputate dignissim suspendisse in est ante in. Dignissim sodales ut eu sem integer. Auctor urna nunc id cursus metus. In nulla posuere sollicitudin aliquam ultrices sagittis.
+      </p>
     </div>
-    <img src="./images/burger_kingdom_logo.jpeg" alt="banner">
-    <img src="./images/farm.jpeg" alt="farm">
-    <img src="./images/freshly_mad.avif" alt="fresh">
+    <div class="container extra-padding">
+      <div class=" text-center mt-5 ">
+          <h1>Contact Us</h1> 
+      </div>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <div class="card mt-2 mx-auto p-4 bg-light">
+            <div class="card-body bg-light">
+              <div class = "container">
+                <form id="contact-form">
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required">
+                                
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Lastname *</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_need">Please specify your need *</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                            <option value="" selected disabled>--Select Your Issue--</option>
+                            <option>Request invoice for order</option>
+                            <option>Request order status</option>
+                            <option>Order never received</option>
+                            <option>Order missing items</option>
+                            <option>Promo code error</option>
+                            <option>Other</option>
+                          </select>        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message">Message *</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <input type="submit" class="btn btn-info btn-send pt-2 btn-block" value="Send Message">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer>
+    <hr>
+    <h2>
+      Tyler Huang & Antony Wu &copy;
+      <br>
+      SI 339
+    </h2>
+  </footer>
 </body>
 
 </html>
