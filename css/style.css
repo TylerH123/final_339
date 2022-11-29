@@ -55,6 +55,10 @@ h1 {
   width: 10%;
 }
 
+.btn-primary {
+  background-color: #0053B3;
+}
+
 .banner{
   width: 100%;
   height: 300px;
@@ -135,6 +139,28 @@ h1 {
   .deal-items img{
     width: 450px;
     height: 400px;
+  }
+  /* END OF DEALS CSS */
+}
+
+/* most common desktop resolution is 1366x768 */
+@media screen and (min-width: 1300px) {
+  /* CSS FOR DEALS PAGE */
+  .deals{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    row-gap: 0;
+  }
+
+  .deal-items {
+    width: 33%;
+    height: 500px;
+  }
+
+  .deal-items img{
+    width: 100%;
   }
   /* END OF DEALS CSS */
 }
