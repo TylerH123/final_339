@@ -115,11 +115,14 @@ h1 {
 /* CSS FOR ABOUT PAGE */
 .about {
   width: 75%;
-  margin-top: 15px;
 }
 
 .about-text {
   margin-bottom: 0;
+}
+
+.about-heading {
+  margin-top: 10px;
 }
 
 .extra-padding {
