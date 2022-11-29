@@ -48,14 +48,6 @@ h1 {
   padding-left: 10px;
 }
 
-.MenuItems{
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 50px;
-  padding: 100px;
-}
 
 .MenuItems > img {
   width: 400px;
@@ -85,6 +77,58 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
+/* MENU ITEMS */
+.newMenuItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+.MenuItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.menuPosting{
+  border: solid black 3px;
+}
+
+.left{
+  text-align: left;
+  display: inline;
+  padding-left: 15px;
+  float: left;
+}
+.right{
+  display: inline;
+  float: right;
+  padding-right: 15px;
+}
+.oneItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu-items img{
+  border-bottom: solid #000 3px;
+  border-radius: 5px 5px 0 0;
+}
+
+.menu-items {
+  width: 75%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 0px;
+  border: #000 solid 3px;
+}
 
 /* CSS FOR HOME PAGE */
 .banner{
@@ -108,11 +152,20 @@ h1 {
   text-align: center;
 }
 
-.menuPreview {
-  display:flex;
-  width:100%;
-    height: 100%;
+.newItemBanner{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  margin: px;
+  border: solid black 3px;
+  background-color: orange;
+  padding: 20px;
 }
+.newItemBanner > img{
+  width: 300px;
+}
+
 
 
 /* CSS FOR DEALS PAGE */
@@ -190,6 +243,19 @@ h1 {
 
 /* most common tablet screen size */
 @media screen and (min-width: 768px) {
+  /* Menu CSS */
+  .menu-items {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 500px;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .menu-items img{
+    width: 450px;
+    height: 400px;
+  }
   /* CSS FOR DEALS PAGE */
   .deals{
     flex-direction: row;
@@ -241,5 +307,26 @@ h1 {
     max-width: 300px;
     max-height: 300px;
   }
+  .newItemBanner {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 30% 70%;
+  }
+
+  .newMenuItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .MenuItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding: 100px;
+  }
+
   /* END OF DEALS CSS */
 }
