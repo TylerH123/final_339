@@ -110,6 +110,12 @@ h1 {
 .deal-items button {
   margin-bottom: 5px;
 }
+
+.code {
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 /* END OF DEALS CSS */
 
 /* CSS FOR ABOUT PAGE */

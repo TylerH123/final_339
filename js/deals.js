@@ -45,6 +45,7 @@ function redeem(id) {
     var newChild = document.createElement("p");
     var code = generateCode(10) + "-" + generateCode(10) + "-" + generateCode(10); 
     newChild.innerHTML = code; 
+    newChild.classList.add("code");
     temp.parentNode.replaceChild(newChild, temp);
 }
 
