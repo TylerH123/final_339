@@ -39,3 +39,23 @@ function clearPromo(btn) {
     btn.classList.add("btn-primary");
     btn.classList.remove("btn-danger");
 }
+
+function redeem(id) {
+    var temp = document.getElementById(id); 
+    var newChild = document.createElement("p");
+    var code = generateCode(10) + "-" + generateCode(10) + "-" + generateCode(10); 
+    newChild.innerHTML = code; 
+    temp.parentNode.replaceChild(newChild, temp);
+}
+
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateCode(length) {
+    let result = '';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
