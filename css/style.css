@@ -146,8 +146,6 @@ h1 {
 
 .code {
   font-size: 20px;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 /* END OF DEALS CSS */
 
@@ -172,6 +170,9 @@ h1 {
   background-color: #14606C;
 }
 
+.mt-5 {
+  margin-top: 20px !important;
+}
 /* END OF ABOUT CSS */
 
 
