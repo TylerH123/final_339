@@ -5,7 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
-  
+body{
+  background-color: bisque;
+}
 .skip a {
   background: white;
   left: 0;
@@ -103,12 +105,13 @@ footer {
 
 .menu-all{
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .newMenuItems{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
 }
@@ -147,21 +150,65 @@ footer {
 .menu-items img{
   border-bottom: solid #000 3px;
   border-radius: 5px 5px 0 0;
+  
+}
+.menu-items {
+  display:grid;
+  width: 450px;
+  height: 500px;
+  font-size: 2rem;
+  align-items: center;
 }
 
-.menu-items {
-  width: 75%;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  padding: 0px;
-  border: #000 solid 3px;
+.menu-items > img{
+  width: 450px;
+  height: 400px;
+}
+
+
+
+.text-input{
+  pointer-events: none;
+  width: 75px;
+  background-color: #fff;
+  color: #000;
+  border: #000 1px solid;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.cart {
+  margin-left: 15px;
 }
 
 /* CSS FOR HOME PAGE */
+.menu-showcase{
+  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+}
+
+.menu-showcase-items {
+  display:grid;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.menu-showcase-items > img{
+  width: 450px;
+  height: 400px;
+}
+
 .menuButton{
   display: inline;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.increment{
+  display:hidden;
 }
 .menuButton > button{
   background-color: rgb(117, 160, 244);
@@ -208,6 +255,7 @@ footer {
 .download{
   width: 200px;
   align-items: center;
+  float: right;
 }
 
 
@@ -286,16 +334,27 @@ footer {
 
 /* most common tablet screen size */
 @media screen and (min-width: 768px) {
+  .menu-all{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+  }
+  .increment {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
   /* Menu CSS */
   .menu-items {
-    flex: 0 0 auto;
+    display:grid;
     width: 450px;
     height: 500px;
     font-size: 2rem;
     align-items: center;
   }
 
-  .menu-items img{
+  .menu-items > img{
     width: 450px;
     height: 400px;
   }
@@ -325,11 +384,22 @@ footer {
     margin-left: 17%;
     margin-right: 17%;
   }
+  .newMenuItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
 }
 
 /* most common desktop resolution is 1366x768 */
 @media screen and (min-width: 1300px) {
   /* CSS FOR DEALS PAGE */
+  .menu-all{
+    display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+  }
   .deals{
     justify-content: center;
     align-items: center;
@@ -351,7 +421,7 @@ footer {
     flex-direction: row;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 80%;
+    width: 100%;
     margin-left: 0; 
 margin-right: auto;
   }
@@ -366,13 +436,6 @@ margin-right: auto;
     margin-left: auto; 
 margin-right: 0;
     }
-
-  .newMenuItems{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-  }
 
   .MenuItems{
     display: grid;

@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/menu.js"></script>
   <title>Burger Kingdom</title>
 </head>
 
@@ -50,15 +51,29 @@
       <div class="menu-items">
         <img src="./images/short_rib.jpeg" alt="short rib burger">
         <div class="description">
-          <h3 class="left">Short Rib Burger</h3>
-          <h3 class="right">$5.99</h3>
+          <h2 class="left">Short Rib Burger</h2>
+          <h2 class="right">$5.99</h2>
+          <br>
+          <div class="increment">
+            <button id="rib-minus" type="button" class="btn btn-primary" onclick="increment('rib', 'minus')">-</button>
+            <button id="rib" type="button" class="btn btn-primary text-input">0</button>
+            <button id="rib-plus" type="button" class="btn btn-primary" onclick="increment('rib', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div> 
       </div>
       <div class="menu-items">
         <img src="./images/triple_patty.jpeg" alt="triple patty burger">
         <div class="description">
-          <h3 class="left">Tripply Patty Burger</h3>
-          <h3 class="right">$7.99</h3>
+          <h2 class="left">Tripply Patty Burger</h2>
+          <h2 class="right">$7.99</h2>
+          <br>
+          <div class="increment">
+            <button id="triple-minus" type="button" class="btn btn-primary" onclick="increment('triple', 'minus')">-</button>
+            <button id="triple" type="button" class="btn btn-primary text-input">0</button>
+            <button id="triple-plus" type="button" class="btn btn-primary" onclick="increment('triple', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div> 
       </div>
     </div>
@@ -66,79 +81,156 @@
     <div class="menu-all">
       <div class="menu-items">
         <img src="./images/Menu_Item_1.jpeg" alt="burger, fries, fountain drink combo">
-        <div id="free-smoothie"> 
-          <p class ="left">Family Meal</p>
-          <p class="right">$9.99</p>
+        <div id="family-meal"> 
+          <h2 class ="left">Family Meal</h2>
+          <h2 class="right">$9.99</h2>
+          <br>
+          <div class="increment">
+            <button id="family-minus" type="button" class="btn btn-primary" onclick="increment('family', 'minus')">-</button>
+            <button id="family" type="button" class="btn btn-primary text-input">0</button>
+            <button id="family-plus" type="button" class="btn btn-primary" onclick="increment('family', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/burger.jpeg" alt="fat burger">
-        <div id="free-fries-drink"> 
-          <p class ="left">BK Burger</p>
-          <p class="right">$3.49</p>
+        <div id="bk-burger"> 
+          <h2 class ="left">BK Burger</h2>
+          <h2 class="right">$3.49</h2>
+          <br>
+          <div class="increment">
+            <button id="burger-minus" type="button" class="btn btn-primary" onclick="increment('burger', 'minus')">-</button>
+            <button id="burger" type="button" class="btn btn-primary text-input">0</button>
+            <button id="burger-plus" type="button" class="btn btn-primary" onclick="increment('burger', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/waffle_sandwitch.jpeg" alt="waffle sandwitch">
-        <div id="free-combo"> 
-          <p class ="left">Waffle Burger</p>
-          <p class="right">$2.99</p>
+        <div id="waffle-burger"> 
+          <h2 class ="left">Waffle Burger</h2>
+          <h2 class="right">$2.99</h2>
+          <br>
+          <div class="increment">
+            <button id="waffle-minus" type="button" class="btn btn-primary" onclick="increment('waffle', 'minus')">-</button>
+            <button id="waffle" type="button" class="btn btn-primary text-input">0</button>
+            <button id="waffle-plus" type="button" class="btn btn-primary" onclick="increment('waffle', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/turkey.png" alt="Turkey Burger">
-        <div id="free-combo"> 
-          <p class ="left">Turkey Burger</p>
-          <p class="right">$3.49</p>
+        <div id="turkey-burger"> 
+          <h2 class ="left">Turkey Burger</h2>
+          <h2 class="right">$3.49</h2>
+          <br>
+          <div class="increment">
+            <button id="turkey-minus" type="button" class="btn btn-primary" onclick="increment('turkey', 'minus')">-</button>
+            <button id="turkey" type="button" class="btn btn-primary text-input">0</button>
+            <button id="turkey-plus" type="button" class="btn btn-primary" onclick="increment('turkey', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/hotdog.jpeg" alt="hotdog">
-        <div id="free-soda"> 
-          <p class ="left">Hot Dog</p>
-          <p class="right">$0.99</p>
+        <div id="hotdog-meal"> 
+          <h2 class ="left">Hot Dog</h2>
+          <h2 class="right">$0.99</h2>
+          <br>
+          <div class="increment">
+            <button id="hotdog-minus" type="button" class="btn btn-primary" onclick="increment('hotdog', 'minus')">-</button>
+            <button id="hotdog" type="button" class="btn btn-primary text-input">0</button>
+            <button id="hotdog-plus" type="button" class="btn btn-primary" onclick="increment('hotdog', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/fries.jpeg" alt="fries">
-        <div id="free-cookies"> 
-          <p class ="left">Fries</p>
-          <p class="right">$1.99</p>
+        <div id="fries-meal"> 
+          <h2 class ="left">Fries</h2>
+          <h2 class="right">$1.99</h2>
+          <br>
+          <div class="increment">
+            <button id="fries-minus" type="button" class="btn btn-primary" onclick="increment('fries', 'minus')">-</button>
+            <button id="fries" type="button" class="btn btn-primary text-input">0</button>
+            <button id="fries-plus" type="button" class="btn btn-primary" onclick="increment('fries', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/onionrings.jpg" alt="onion rings">
-        <div id="free-chips"> 
-          <p class ="left">Onion Rings</p>
-          <p class="right">$2.49</p>
+        <div id="onion-rings"> 
+          <h2 class ="left">Onion Rings</h2>
+          <h2 class="right">$2.49</h2>
+          <br>
+          <div class="increment">
+            <button id="rings-minus" type="button" class="btn btn-primary" onclick="increment('rings', 'minus')">-</button>
+            <button id="rings" type="button" class="btn btn-primary text-input">0</button>
+            <button id="rings-plus" type="button" class="btn btn-primary" onclick="increment('rings', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/soda.png" alt="soda">
-        <div id="free-soda"> 
-          <p class ="left">Soda</p>
-          <p class="right">$1.49</p>
+        <div id="soda"> 
+          <h2 class ="left">Soda</h2>
+          <h2 class="right">$1.49</h2>
+          <br>
+          <div class="increment">
+            <button id="drink-minus" type="button" class="btn btn-primary" onclick="increment('drink', 'minus')">-</button>
+            <button id="drink" type="button" class="btn btn-primary text-input">0</button>
+            <button id="drink-plus" type="button" class="btn btn-primary" onclick="increment('drink', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/soft_serve.jpeg" alt="soft_serve">
-        <div id="free-cookies"> 
-          <p class ="left">Soft Serve</p>
-          <p class="right">$1.89</p>
+        <div id="soft-serve"> 
+          <h2 class ="left">Soft Serve</h2>
+          <h2 class="right">$1.89</h2>
+          <br>
+        <div class="increment">
+          <button id="icecream-minus" type="button" class="btn btn-primary" onclick="increment('icecream', 'minus')">-</button>
+          <button id="icecream" type="button" class="btn btn-primary text-input">0</button>
+          <button id="icecream-plus" type="button" class="btn btn-primary" onclick="increment('icecream', 'plus')">+</button>
+          <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+        </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/milkshake.jpg" alt="milkshake">
-        <div id="free-chips"> 
-          <p class ="left">Milk Shake</p>
-          <p class="right">$5.99</p>
+        <div id="milkshake"> 
+          <h2 class ="left">Milk Shake</h2>
+          <h2 class="right">$5.99</h2>
+          <br>
+        <div class="increment">
+          <button id="shake-minus" type="button" class="btn btn-primary" onclick="increment('shake', 'minus')">-</button>
+          <button id="shake" type="button" class="btn btn-primary text-input">0</button>
+          <button id="shake-plus" type="button" class="btn btn-primary" onclick="increment('shake', 'plus')">+</button>
+          <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+        </div>
         </div>
       </div>
       <div class="menu-items">
         <img src="./images/cookies.jpg" alt="cookies">
-        <div id="free-chips"> 
-          <p class ="left">Cookies</p>
-          <p class="right">$1.99</p>
+        <div id="cookies-meal"> 
+          <h2 class ="left">Cookies</h2>
+          <h2 class="right">$1.99</h2>
+          <br>
+          <div class="increment">
+            <button id="cookies-minus" type="button" class="btn btn-primary" onclick="increment('cookies', 'minus')">-</button>
+            <button id="cookies" type="button" class="btn btn-primary text-input">0</button>
+            <button id="cookies-plus" type="button" class="btn btn-primary" onclick="increment('cookies', 'plus')">+</button>
+            <button type="button" class="btn btn-primary cart" onclick="viewCart()">View Cart</button>
+          </div>
         </div>
       </div>
     </div>
