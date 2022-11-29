@@ -137,23 +137,18 @@ h1 {
   align-items: center;
 }
 
-/* .minus {
-  margin-left: auto;
+.text-input{
+  pointer-events: none;
+  width: 75px;
+  background-color: #fff;
+  color: #000;
+  border: #000 1px solid;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.plus {
-  margin-right: auto;
-} */
-
-input{
-  height:34px;
-  width: 100px;
-  text-align: center;
-  font-size: 26px;
-  border:1px solid #ddd;
-  border-radius:4px;
-  display: inline-block;
-  vertical-align: middle;
+.cart {
+  margin-left: 15px;
 }
 
 /* CSS FOR HOME PAGE */
