@@ -211,6 +211,7 @@ p {
 .deal-items img {
   border-bottom: solid #000 3px;
   border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
 .deal-items {
