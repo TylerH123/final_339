@@ -65,6 +65,12 @@ footer {
   height: 300px;
 }
 
+.increment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-primary {
   background-color: #0053B3;
 }
@@ -130,16 +136,15 @@ footer {
 
 .left {
   text-align: left;
-  display: inline;
-  padding-left: 15px;
   float: left;
-  font-size: 100%;
+  font-size: 90%;
+  padding-left: 5px;
 }
 
 .right {
-  display: inline;
   float: right;
-  padding-right: 15px;
+  font-size: 90%;
+  padding-right: 5px;
 }
 
 .oneItem {
@@ -150,8 +155,7 @@ footer {
 }
 
 .menu-items img {
-  border-bottom: solid #000 3px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
 
 .menu-items {
@@ -328,8 +332,6 @@ p {
 
 /* END OF ABOUT CSS */
 
-
-
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -343,32 +345,23 @@ p {
 
 /* most common tablet screen size */
 @media screen and (min-width: 768px) {
-  .menu-all {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-
-  .increment {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
 
   /* Menu CSS */
   .menu-items {
-    display: grid;
-    width: 450px;
-    height: 500px;
-    font-size: 2rem;
-    align-items: center;
+    width: 100%;
   }
 
   .menu-items>img {
-    width: 450px;
-    height: 400px;
+    width: 100%;
   }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* END OF MENU CSS */
 
   /* CSS FOR DEALS PAGE */
   .deals {
@@ -391,31 +384,12 @@ p {
   }
 
   /* END OF DEALS CSS */
-
-  .menuButton {
-    display: inline;
-    margin-left: 17%;
-    margin-right: 17%;
-  }
-
-  .newMenuItems {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-  }
 }
 
 /* most common desktop resolution is 1366x768 */
 @media screen and (min-width: 1300px) {
 
   /* CSS FOR DEALS PAGE */
-  .menu-all {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-
   .deals {
     justify-content: center;
     align-items: center;
@@ -470,5 +444,9 @@ p {
     display: inline;
     margin-left: 25%;
     margin-right: 25%;
+  }
+
+  .menu {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
