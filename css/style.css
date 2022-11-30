@@ -162,6 +162,10 @@ footer {
   max-height: 300px;
 }
 
+.download-info {
+  margin: auto;
+}
+
 .banner>h5,
 h3,
 p {
