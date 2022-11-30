@@ -92,6 +92,8 @@ footer {
 
 .menu-items img {
   border-radius: 5px;
+  width: 100%;
+  height: 400px;
 }
 
 .menu-items {
@@ -100,11 +102,6 @@ footer {
   height: 500px;
   font-size: 2rem;
   align-items: center;
-}
-
-.menu-items>img {
-  width: 100%;
-  height: 400px;
 }
 
 .black-text {
