@@ -80,13 +80,13 @@ footer {
 .left {
   text-align: left;
   float: left;
-  font-size: 90%;
+  font-size: 85%;
   padding-left: 5px;
 }
 
 .right {
   float: right;
-  font-size: 90%;
+  font-size: 85%;
   padding-right: 5px;
 }
 
