@@ -386,4 +386,8 @@ p {
   .menu-home {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .extra-padding {
+    margin-bottom: 285px;
+  }
 }
