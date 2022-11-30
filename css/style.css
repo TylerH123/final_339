@@ -368,11 +368,11 @@ p {
   /* END OF DEALS CSS */
 
   .menu {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .new-item-menu div:first-child {
-    grid-column-start: 3;
+    grid-column-start: 2;
   }
 
   .new-menu-items {
@@ -381,10 +381,6 @@ p {
 
   .tablet-hide {
     display: grid;
-  }
-
-  .menu-home {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .extra-padding {
