@@ -96,14 +96,14 @@ footer {
 
 .menu-items {
   display: grid;
-  width: 450px;
+  width: 65%;
   height: 500px;
   font-size: 2rem;
   align-items: center;
 }
 
 .menu-items>img {
-  width: 450px;
+  width: 100%;
   height: 400px;
 }
 
@@ -131,25 +131,6 @@ footer {
 }
 
 /* CSS FOR HOME PAGE */
-.menu-showcase {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.menu-showcase-items {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  font-size: 2rem;
-  align-items: center;
-}
-
-.menu-showcase-items>img {
-  width: 450px;
-  height: 400px;
-}
-
 .menuButton {
   display: flex;
   justify-content: center;
@@ -160,7 +141,7 @@ footer {
 .menuButton>button {
   background-color: rgb(117, 160, 244);
   border: solid black 2px;
-  border-radius: 5px;
+  border-radius: 7px;
   padding: 10px;
 }
 
@@ -201,10 +182,6 @@ p {
 }
 
 .newItemBanner>img {
-  width: 300px;
-}
-
-.newItemBanner2>img {
   width: 300px;
 }
 
@@ -362,11 +339,9 @@ p {
   }
 
   .banner {
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     width: 90%;
-    margin-left: 30px;
-    margin-right: auto;
     font-size: 1.5rem;
   }
 
@@ -376,8 +351,8 @@ p {
     margin: 20px;
   }
 
-  .newItemBanner {
-    margin-right: 30px;
+  .banner-download {
+    width: 60%;
   }
 
   /* END OF DEALS CSS */
